@@ -1,0 +1,9 @@
+<h1><%= @pet.name %></h1><br>
+    <img style="width:40vw" src="<%= @pet.image %>">
+    <h3>Age: <%= @pet.age  %></h3>
+    <h3>Sex: <%= @pet.sex  %></h3>
+    <% if @pet.status = 0 %>
+        <h3>Status: Ready for Adoption!</h3>
+    <% else %>
+        <h3>Status: Pending Adoption!</h3>
+    <% end %>
