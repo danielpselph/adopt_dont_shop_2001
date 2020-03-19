@@ -6,7 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Shelter.destroy_all
+Shelter.delete_all
+Pet.delete_all
 
 shelter1 = Shelter.create(name: "Poncho's Pointy Pets",
                             address: "555 Indiana Ave",
@@ -25,3 +26,16 @@ shelter3 = Shelter.create(name: "Avian Friends Rescue",
                             city: "San Diego",
                             state: "California",
                             zip: "92109")
+                            
+pet1 = shelter1.pets.create(name: "Alphonso",
+                            image: "https://images.freeimages.com/images/large-previews/d1b/white-tailed-porcupine-1364172.jpg",
+                            age: 3,
+                            sex: "Male",)
+pet2 = shelter2.pets.create(name: "Craig",
+                            image: "https://images.freeimages.com/images/large-previews/6f2/crocodile-1404500.jpg",
+                            age: 48,
+                            sex: "Male")
+pet3 = shelter3.pets.create(name: "Sharon",
+                            image: "https://images.freeimages.com/images/large-previews/161/bird-1383764.jpg",
+                            age: 7,
+                            sex: "Female")

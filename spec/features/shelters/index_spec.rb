@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "shelters index page", type: :feature do
     describe "as a visitor" do
-        it 'can see all shelter names and links' do
+        it "can see all shelter names and links" do
 
             shelter1 = Shelter.create(name: "Poncho's Pointy Pets",
                                         address: "555 Indiana Ave",
