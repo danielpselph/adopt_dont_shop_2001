@@ -34,3 +34,6 @@ RSpec.describe "shelters index page", type: :feature do
         end
     end
 end
+
+
+#need to add within test blocks to test links

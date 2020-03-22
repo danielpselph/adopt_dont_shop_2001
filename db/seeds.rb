@@ -30,12 +30,18 @@ shelter3 = Shelter.create(name: "Avian Friends Rescue",
 pet1 = shelter1.pets.create(name: "Alphonso",
                             image: "https://images.freeimages.com/images/large-previews/d1b/white-tailed-porcupine-1364172.jpg",
                             age: 3,
-                            sex: "Male",)
+                            sex: "Male",
+                            status: true,
+                            description: "Pokey but sweet")
 pet2 = shelter2.pets.create(name: "Craig",
                             image: "https://images.freeimages.com/images/large-previews/6f2/crocodile-1404500.jpg",
                             age: 48,
-                            sex: "Male")
-pet3 = shelter3.pets.create(name: "Sharon",
+                            sex: "Male",
+                            status: true,
+                            description: "May eat your children...")
+pet3 = shelter3.pets.create(name: "Karen",
                             image: "https://images.freeimages.com/images/large-previews/161/bird-1383764.jpg",
                             age: 7,
-                            sex: "Female")
+                            sex: "Female",
+                            status: true,
+                            description: "Will want to speak to a manager")
