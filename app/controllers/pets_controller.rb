@@ -15,7 +15,7 @@ class PetsController < ApplicationController
     def update
       pet = Pet.find(params[:id])
       pet.update(pet_params)
-      pet.save
+      pet.save!
       redirect_to "/pets/#{pet.id}"
     end
 
